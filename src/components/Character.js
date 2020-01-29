@@ -23,8 +23,13 @@ export default class Character extends Component {
      return (
        <>
          <div className={styles.card}>
-           <div className={styles.image}><img src={image}></img></div>
-           <div className={styles.banner}>{name}{id}{dateCreated}</div>
+           <div><img src={image}></img></div>
+           <div className={styles.banner}>
+             <div id={styles.charname}>{name}</div>
+             <div>{id}{dateCreated}</div>
+           </div>
+
+           
            <div className={styles.charstats}>
              <StatsElement
                title='STATUS'

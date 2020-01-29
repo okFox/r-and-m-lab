@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './App.css';
-import Character from './Character';
+// import Character from './Character';
 import MapCharacters from './MapCharacters';
 
 class Header extends Component {
