@@ -21,7 +21,7 @@ class Header extends Component {
       </header>
     );
   }
-};
+}
 
 class Footer extends Component {
   render() {
@@ -45,11 +45,13 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header />
-        {MapCharacters}
+        <div className='cards-container'>
+          {MapCharacters}
+        </div>
         <Footer />
       </React.Fragment>
     );
   }
-};
+}
 
 export default App;

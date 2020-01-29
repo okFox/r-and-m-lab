@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './Character.css';
 
 export default class StatsElement extends Component {
   render() {
@@ -6,10 +7,10 @@ export default class StatsElement extends Component {
 
     return (
       <>
-        <li>
+        <div className={styles.statItem}>
           <span>{title}</span>
           <p>{description}</p>
-        </li>
+        </div>
       </>
     );
   }

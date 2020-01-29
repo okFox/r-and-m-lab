@@ -1,3 +1,10 @@
+.cards-container {
+  background: #202329;
+  padding: 30px;
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
 .Header {
   padding: 1rem;
   font-size: 1.5rem;

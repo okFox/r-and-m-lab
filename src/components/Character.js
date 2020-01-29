@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import StatsElement from './StatsElement';
+import styles from './Character.css';
 
 
 
@@ -21,11 +22,10 @@ export default class Character extends Component {
   
      return (
        <>
-         
-         <div className='image'><img src={image}></img></div>
-         <div className='banner'>{name}{id}{dateCreated}</div>
-         <div className='stats'>
-           <ol>
+         <div className={styles.card}>
+           <div className={styles.image}><img src={image}></img></div>
+           <div className={styles.banner}>{name}{id}{dateCreated}</div>
+           <div className={styles.charstats}>
              <StatsElement
                title='STATUS'
                description={status} />
@@ -41,7 +41,8 @@ export default class Character extends Component {
              <StatsElement
                title='LAST LOCATION'
                description={lastLocation} />
-           </ol>
+
+           </div>
          </div>
        </>
      );
