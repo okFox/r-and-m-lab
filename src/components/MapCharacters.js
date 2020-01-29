@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Character from './Character';
 import characters from '../characters';
-import styles from './App.css';
+import styles from './MapCharacters.css';
 
 const charArray = characters.map(character => {
   return <Character
@@ -23,13 +23,10 @@ export default class MapCharacter extends Component {
     characters: PropTypes.arrayOf(PropTypes.object)
   }
 
-  
   render() {
     return (
       <div className={styles.cardsContainer}> 
         {charArray}
       </div>
-
     );
-
   }}
