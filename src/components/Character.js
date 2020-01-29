@@ -26,7 +26,7 @@ export default class Character extends Component {
            <div><img src={image}></img></div>
            <div className={styles.banner}>
              <div id={styles.charname}>{name}</div>
-             <div>{id}{dateCreated}</div>
+             <div id={styles.bannerSub}><div id={styles.textId}>id: {id}</div><div>{dateCreated}</div></div>
            </div>
  
            <div className={styles.charstats}>

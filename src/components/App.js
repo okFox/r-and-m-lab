@@ -44,8 +44,8 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
-        <div className={styles.cardsContainer}>
+        <Header /> 
+        <div className={styles.cardsContainer}> 
           {MapCharacters}
         </div>
         <Footer />
