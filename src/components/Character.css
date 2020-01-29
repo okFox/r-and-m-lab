@@ -1,17 +1,21 @@
+
 .card {
     font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Helvetica','Arial',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
     font-size: 11.2px;
     width: 300px;
     background-color:rgb(51, 51, 51);
+    margin: 10px;
     border-radius: 20px;
 }
 .banner {
     width: 300px;
     height: 80px;
-    background: rgba(32, 35, 41,.5);
+    background: rgba(32, 35, 41,.8);
     padding: 0.625rem;
-    position: absolute;
-    bottom: 100px;
+}
+.card > .banner {
+    position: relative;
+    bottom: 80px;
 }
 #charname {
     font-size: 26px;
@@ -23,27 +27,31 @@ img {
 }
 
 .charstats {
-    padding: 20px;
-}
+    margin-top: 0;
+    margin-top: 0;
+};
 
-span {
+.card span {
     color: #BAB5AB;
     text-align: left;
 }
 .card p {
     width: 100%;
     font-size: 0.9rem;
+    font-weight: 200;
     text-align: right;
     padding: 0px;
     margin: 0px;
-    color: #FFAD33
+    color: #FFAD33;
+    border-radius: 20px;
 }
 
 .statItem {
     display: flex;
     align-content: space-between;
     height: 100%;
-    color: rgb(255, 152, 0);
+
     padding: 1.25rem;
     background: rgb(51, 51, 51);
+    border-radius: 20px;
 }

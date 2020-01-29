@@ -1,8 +1,9 @@
-.cards-container {
+.cardsContainer {
   background: #202329;
   padding: 30px;
-  display: flexbox;
+  display: flex;
   flex-wrap: wrap;
+
 }
 
 .Header {

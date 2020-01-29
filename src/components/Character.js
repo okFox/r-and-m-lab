@@ -15,7 +15,7 @@ export default class Character extends Component {
      gender: PropTypes.string.isRequired,
      origin: PropTypes.string.isRequired,
      lastLocation: PropTypes.string.isRequired,
-     image: PropTypes.string
+     image: PropTypes.string.isRequired
    };
    render() {
      const { name, id, dateCreated, status, species, gender, origin, lastLocation, image } = this.props;
@@ -28,8 +28,7 @@ export default class Character extends Component {
              <div id={styles.charname}>{name}</div>
              <div>{id}{dateCreated}</div>
            </div>
-
-           
+ 
            <div className={styles.charstats}>
              <StatsElement
                title='STATUS'
@@ -46,7 +45,6 @@ export default class Character extends Component {
              <StatsElement
                title='LAST LOCATION'
                description={lastLocation} />
-
            </div>
          </div>
        </>
