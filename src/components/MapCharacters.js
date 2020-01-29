@@ -25,7 +25,7 @@ export default class MapCharacter extends Component {
 
   render() {
     return (
-      <div className={styles.cardsContainer}> 
+      <div className={styles.cardsContainer}>
         {charArray}
       </div>
     );
