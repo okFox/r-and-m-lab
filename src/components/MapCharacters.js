@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Character from './Character';
 import characters from '../characters';
+import styles from './MapCharacters.css';
 
-export default characters.map(character => {
+const charArray = characters.map(character => {
   return <Character
     key={character.id}
     image={`https://rickandmortyapi.com/api/character/avatar/${character.id}.jpeg`}
@@ -16,3 +18,15 @@ export default characters.map(character => {
     lastLocation={character.lastLocation}
   />;
 });
+export default class MapCharacter extends Component {
+  static propTypes = { 
+    characters: PropTypes.arrayOf(PropTypes.object)
+  }
+
+  render() {
+    return (
+      <div className={styles.cardsContainer}>
+        {charArray}
+      </div>
+    );
+  }}
